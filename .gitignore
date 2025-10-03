@@ -1,0 +1,13 @@
+__pycache__/
+logs/
+*.log
+*.bak
+*.tar.gz
+*.bin
+*.gguf
+storage/
+
+# local only
+env.sh
+whisper.cpp/
+whisper-cli
