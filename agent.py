@@ -60,7 +60,7 @@ TOKEN       = os.environ.get("TOKEN", "REPLACE_WITH_REAL_TOKEN")
 SERVER_WS   = os.environ.get("SERVER_WS") or f"wss://call-analysis-s6cb.onrender.com/ws/worker/{WORKER_ID}?token={TOKEN}"
 SERVER_API  = os.environ.get("SERVER_API") or "https://call-analysis-s6cb.onrender.com/api/v1/job_result"
 
-MODEL_PATH  = os.environ.get("MODEL_PATH", "/sdcard/worker/models/ggml-large-v3-q5_k.bin")
+MODEL_PATH  = os.environ.get("MODEL_PATH", "/sdcard/worker/models/ggml-medium-q5_0.bin)
 LANG_HINT   = os.environ.get("LANG_HINT", "ru")
 THREADS     = int(os.environ.get("THREADS", "8"))
 CURRENT_JOB = None
