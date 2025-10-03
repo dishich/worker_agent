@@ -14,8 +14,8 @@ def ins(after_pat, block, once_name):
 
 # 0) глобалы: CURRENT_JOB уже есть. Добавим USE_GPU и MODEL_PATH_FALLBACK
 if "MODEL_PATH_FALLBACK" not in s:
-    s = s.replace("MODEL_PATH  = os.environ.get(\"MODEL_PATH\", \"/sdcard/worker/models/ggml-large-v3-q5_k.bin\")",
-                  "MODEL_PATH  = os.environ.get(\"MODEL_PATH\", \"/sdcard/worker/models/ggml-large-v3-q5_k.bin\")\nMODEL_PATH_FALLBACK = os.environ.get(\"MODEL_PATH_FALLBACK\")")
+    s = s.replace("MODEL_PATH  = os.environ.get(\"MODEL_PATH\", \"/sdcard/worker/models/ggml-medium-q5_0.bin\")",
+                  "MODEL_PATH  = os.environ.get(\"MODEL_PATH\", \"/sdcard/worker/models/ggml-medium-q5_0.bin\")\nMODEL_PATH_FALLBACK = os.environ.get(\"MODEL_PATH_FALLBACK\")")
 if "USE_GPU" not in s:
     s = s.replace("CURRENT_JOB = None", "CURRENT_JOB = None\nUSE_GPU = None  # autodetected at runtime")
 
