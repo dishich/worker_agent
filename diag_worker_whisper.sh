@@ -58,7 +58,7 @@ fi
 echo
 
 # 3) Проверка модели
-DEFAULT_MODEL="/sdcard/worker/models/ggml-large-v3-q5_k.bin"
+DEFAULT_MODEL="/sdcard/worker/models/ggml-medium-q5_0.bin"
 MODEL_PATH_EFF="${MODEL_PATH:-$DEFAULT_MODEL}"
 info "MODEL_PATH effective: $MODEL_PATH_EFF"
 if [ -f "$MODEL_PATH_EFF" ]; then
